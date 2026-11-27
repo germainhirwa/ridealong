@@ -19,6 +19,8 @@ a{color:#15171A}a:hover{color:#16723F}
 .rl summary{cursor:pointer;list-style:none}.rl summary::-webkit-details-marker{display:none}
 .rl details[open] .plus{transform:rotate(45deg)}
 .rl .cta:hover{background:#0F5530}
+@media (max-width:900px){.rl .tgrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+@media (max-width:600px){.rl .tgrid{grid-template-columns:1fr !important}.rl .tcard-wide{grid-column:auto !important}}
 @media (max-width:720px){.rl .h1{font-size:44px !important}.rl .h2{font-size:34px !important}.rl .navlinks{display:none !important}.rl .sec{padding:64px 20px !important}}
 </style>
 </head>
@@ -34,6 +36,7 @@ Ridealong</a>
 <div class="navlinks" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
 <a href="#how" style="text-decoration: none">How it works</a>
 <a href="#roi" style="text-decoration: none">What it's worth</a>
+<a href="#stories" style="text-decoration: none">Customers</a>
 <a href="#trades" style="text-decoration: none">Trades</a>
 <a href="#faq" style="text-decoration: none">FAQ</a>
 </div>
@@ -95,26 +98,38 @@ Ridealong</a>
 </div>
 </section>
 
+<!-- KITCHEN TABLE -->
+<section style="position: relative; max-width: 1200px; margin: 72px auto 0; padding: 0 24px">
+<div style="position: relative; border-radius: 24px; overflow: hidden">
+<img src="https://ridealong-pilot.vercel.app/assets/kitchen-table-CkrU3p9d.webp" alt="A rep walking homeowners through an estimate at their kitchen table" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 21 / 9; min-height: 320px; object-fit: cover; display: block">
+<div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(21,23,26,0.78) 0%, rgba(21,23,26,0.15) 65%)"></div>
+<p style="position: absolute; left: 40px; bottom: 36px; right: 40px; max-width: 560px; margin: 0; color: #FFFFFF; font-family: Archivo, sans-serif; font-weight: 800; font-size: clamp(26px, 3.4vw, 42px); line-height: 1.08; letter-spacing: -0.02em">The sale happens at the kitchen table. Now you can coach from what happens there.</p>
+</div>
+</section>
+
 <!-- FEATURES -->
 <section class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px 40px">
 <p style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #16723F; margin: 0">What you get</p>
 <h2 class="h2" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 50px; line-height: 1.05; letter-spacing: -0.03em; margin: 12px 0 0; max-width: 760px">Coach from what happened at the kitchen table.</h2>
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 48px">
-<div style="flex: 1 1 320px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 30px">
+<div style="flex: 1 1 320px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column"><img src="https://ridealong-pilot.vercel.app/assets/owner-truck-F5jf4Mlg.webp" alt="A shop owner reading a scorecard on his phone in the cab of his truck" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block"><div style="padding: 26px 30px 30px">
 <div style="font-size: 13px; font-weight: 700; color: #646A72">01</div>
 <h3 style="font-family: Archivo, sans-serif; font-size: 24px; letter-spacing: -0.01em; margin: 10px 0 0">See the exact minute a deal turned</h3>
 <p style="font-size: 16px; line-height: 1.55; color: #3F444B; margin: 10px 0 0">Every visit is scored against your own sales process. When a deal walks, you see the skipped step and hear what the homeowner said just before. Tap any line to play that moment.</p>
 </div>
-<div style="flex: 1 1 320px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 30px">
+</div>
+<div style="flex: 1 1 320px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column"><img src="https://ridealong-pilot.vercel.app/assets/sales-meeting-D9Xiq4Lt.webp" alt="A sales manager playing back a recorded moment to the team in a Monday meeting" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block"><div style="padding: 26px 30px 30px">
 <div style="font-size: 13px; font-weight: 700; color: #646A72">02</div>
 <h3 style="font-family: Archivo, sans-serif; font-size: 24px; letter-spacing: -0.01em; margin: 10px 0 0">Coach every rep, not just the ones you ride with</h3>
 <p style="font-size: 16px; line-height: 1.55; color: #3F444B; margin: 10px 0 0">See all your reps in one view: which steps each one does every time and which they skip. Coaching priorities come ranked, so your time goes where it moves the most deals.</p>
 </div>
-<div style="flex: 1 1 320px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 30px">
+</div>
+<div style="flex: 1 1 320px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column"><img src="https://ridealong-pilot.vercel.app/assets/new-rep-BbBboozf.webp" alt="A sales manager pointing to a line on a checklist while a new rep listens back to an appointment with her" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block"><div style="padding: 26px 30px 30px">
 <div style="font-size: 13px; font-weight: 700; color: #646A72">03</div>
 <h3 style="font-family: Archivo, sans-serif; font-size: 24px; letter-spacing: -0.01em; margin: 10px 0 0">Get new reps selling like your best one</h3>
 <p style="font-size: 16px; line-height: 1.55; color: #3F444B; margin: 10px 0 0">Compare a new hire with your top closer step by step. Then hand them the two minutes of tape where your best rep gets it right. Real clips, not role-play.</p>
+</div>
 </div>
 </div>
 
@@ -168,7 +183,7 @@ Ridealong</a>
 </div>
 <div style="flex: 1 1 440px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
 <img src="assets/band_metal.jpg" alt="Ridealong band with a brushed metal face" style="grid-column: span 2; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 18px; display: block">
-<img src="assets/band_sport.jpg" alt="Ridealong band in a vented sport strap" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 18px; display: block">
+<img src="https://ridealong-pilot.vercel.app/assets/doorstep-CGbo5llB.webp" alt="A rep asking a homeowner at the front door before the appointment" loading="lazy" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 18px; display: block">
 <div style="background: #15171A; color: #F6F4EF; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; justify-content: center; gap: 12px; font-size: 15px">
 <div style="display: flex; gap: 10px; align-items: center"><span style="width: 10px; height: 10px; border-radius: 50%; background: #3DDC84"></span>Audio only, no camera</div>
 <div style="display: flex; gap: 10px; align-items: center"><span style="width: 10px; height: 10px; border-radius: 50%; background: #3DDC84"></span>One-press start</div>
@@ -186,53 +201,60 @@ Ridealong</a>
 <p style="font-size: 18px; color: #3F444B; margin: 14px 0 0; max-width: 640px; line-height: 1.55">On the first call you walk us through how you sell. Here's what the scorecard checks in a few trades.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; margin-top: 40px">
 
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; padding: 22px">
+<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/roofing-Ch_Q1vq4.webp" alt="Roofing sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
 <div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Roofing</div>
 <ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
 <li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Explained the damage found on the roof</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Clear on what insurance covers and what it doesn’t</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Gave the price, then the payment options</li>
 </ul>
 </div>
+</div>
 
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; padding: 22px">
+<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/hvac-CqxPD8zp.webp" alt="HVAC sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
 <div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">HVAC</div>
 <ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
 <li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Explained what they found on the old system</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Presented good, better and best options</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Offered the maintenance agreement</li>
 </ul>
 </div>
+</div>
 
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; padding: 22px">
+<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/solar-DSoUnDao.webp" alt="Solar sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
 <div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Solar</div>
 <ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
 <li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Had both decision makers at the table</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Kept savings claims to what the proposal shows</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Compared loan, lease and cash in plain numbers</li>
 </ul>
 </div>
+</div>
 
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; padding: 22px">
+<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/windows-CusvoEsp.webp" alt="Windows & doors sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
 <div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Windows &amp; doors</div>
 <ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
 <li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Explained energy savings and rebates</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Built value before giving the price</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Asked for the sale the same day</li>
 </ul>
 </div>
+</div>
 
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; padding: 22px">
+<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/remodeling-l1xrNB6G.webp" alt="Remodeling sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
 <div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Remodeling</div>
 <ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
 <li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Had every decision maker at the table</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Pinned down budget and timeline</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Asked for the sale before leaving</li>
 </ul>
 </div>
+</div>
 
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; padding: 22px">
+<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/pest-CeJk8-3K.webp" alt="Pest control sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
 <div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Pest control</div>
 <ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
 <li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Explained what the inspection found</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Offered the recurring plan</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Set the first service date</li>
 </ul>
 </div>
+</div>
 
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; padding: 22px">
+<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/plumbing-BIsXh7z6.webp" alt="Plumbing sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
 <div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Plumbing</div>
 <ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
 <li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Explained repair versus replace</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Gave the price before starting work</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Offered the membership plan</li>
 </ul>
+</div>
 </div>
 
 <div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; padding: 22px">
@@ -242,6 +264,70 @@ Ridealong</a>
 </ul>
 </div>
 
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="stories" class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px 32px">
+<p style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #16723F; margin: 0">Customers</p>
+<h2 class="h2" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 50px; line-height: 1.05; letter-spacing: -0.03em; margin: 12px 0 0">Owners who stopped guessing.</h2>
+<p style="font-size: 18px; color: #3F444B; margin: 14px 0 0; line-height: 1.55">Hear it from the shops that coach from every appointment.</p>
+<div class="tgrid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 40px">
+<figure class="tcard tcard-wide" style="grid-column: span 2; position: relative; margin: 0; min-height: 420px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF">
+<img src="https://ridealong-pilot.vercel.app/assets/story-roofing-DmtvUKwL.webp" alt="" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,26,0) 30%, rgba(21,23,26,0.88) 100%)"></div>
+<span style="position: absolute; top: 16px; left: 16px; background: #FFFFFF; color: #15171A; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
+<figcaption style="position: relative; padding: 24px; display: flex; flex-direction: column"><div style="display: inline-flex; flex-direction: column; background: #3DDC84; color: #0B2A17; border-radius: 12px; padding: 10px 14px; margin-bottom: 14px; align-self: flex-start"><b style="font-family: Archivo, sans-serif; font-size: 20px">[Result]</b><span style="font-size: 13px; font-weight: 600">[What improved, in their numbers]</span></div><blockquote style="margin: 0; font-size: 22px; line-height: 1.4; font-weight: 600">[Quote: Before and after: how they coached, and what it did to their close rate]</blockquote>
+<div style="margin-top: 14px; font-size: 14px"><b>[Name], [Company]</b><br><span style="color: #D5D8DC">Owner · Roofing</span></div></figcaption>
+</figure>
+<figure class="tcard" style="position: relative; margin: 0; min-height: 420px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF">
+<img src="https://ridealong-pilot.vercel.app/assets/story-hvac-DHRbiqGm.webp" alt="" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,26,0) 30%, rgba(21,23,26,0.88) 100%)"></div>
+<span style="position: absolute; top: 16px; left: 16px; background: #FFFFFF; color: #15171A; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
+<figcaption style="position: relative; padding: 24px; display: flex; flex-direction: column"><blockquote style="margin: 0; font-size: 18px; line-height: 1.4; font-weight: 600">[Quote: The first missed step the scorecard caught]</blockquote>
+<div style="margin-top: 14px; font-size: 14px"><b>[Name], [Company]</b><br><span style="color: #D5D8DC">Sales manager · HVAC</span></div></figcaption>
+</figure>
+<figure class="tcard" style="position: relative; margin: 0; min-height: 420px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF">
+<img src="https://ridealong-pilot.vercel.app/assets/story-solar-UzUKjAH0.webp" alt="" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,26,0) 30%, rgba(21,23,26,0.88) 100%)"></div>
+<span style="position: absolute; top: 16px; left: 16px; background: #FFFFFF; color: #15171A; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
+<figcaption style="position: relative; padding: 24px; display: flex; flex-direction: column"><blockquote style="margin: 0; font-size: 18px; line-height: 1.4; font-weight: 600">[Quote: Getting a new rep closing in weeks instead of months]</blockquote>
+<div style="margin-top: 14px; font-size: 14px"><b>[Name], [Company]</b><br><span style="color: #D5D8DC">Owner · Solar</span></div></figcaption>
+</figure>
+<figure style="position: relative; margin: 0; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
+<span style="align-self: flex-start; background: #ECE8DF; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
+<div><div style="margin-bottom: 14px"><b style="font-family: Archivo, sans-serif; font-size: 22px; color: #16723F">[Result]</b><div style="font-size: 13px; color: #646A72; font-weight: 600">[What improved, in their numbers]</div></div><blockquote style="margin: 0; font-size: 18px; line-height: 1.45; font-weight: 600">[Quote: Replacing Saturday ride-alongs]</blockquote></div>
+<figcaption style="display: flex; gap: 12px; align-items: center; font-size: 14px"><img src="https://ridealong-pilot.vercel.app/assets/avatar-windows-B7SQDbG2.webp" alt="" loading="lazy" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover"><span><b>[Name], [Company]</b><br><span style="color: #646A72">Owner · Windows &amp; doors</span></span></figcaption>
+</figure>
+<figure class="tcard" style="position: relative; margin: 0; min-height: 420px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF">
+<img src="https://ridealong-pilot.vercel.app/assets/story-remodeling-Bos1hRj4.webp" alt="" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,26,0) 30%, rgba(21,23,26,0.88) 100%)"></div>
+<span style="position: absolute; top: 16px; left: 16px; background: #FFFFFF; color: #15171A; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
+<figcaption style="position: relative; padding: 24px; display: flex; flex-direction: column"><div style="display: inline-flex; flex-direction: column; background: #3DDC84; color: #0B2A17; border-radius: 12px; padding: 10px 14px; margin-bottom: 14px; align-self: flex-start"><b style="font-family: Archivo, sans-serif; font-size: 20px">[Result]</b><span style="font-size: 13px; font-weight: 600">[What improved, in their numbers]</span></div><blockquote style="margin: 0; font-size: 18px; line-height: 1.4; font-weight: 600">[Quote: Playing the tape in the Monday sales meeting]</blockquote>
+<div style="margin-top: 14px; font-size: 14px"><b>[Name], [Company]</b><br><span style="color: #D5D8DC">Sales manager · Remodeling</span></div></figcaption>
+</figure>
+<figure class="tcard" style="position: relative; margin: 0; min-height: 420px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF">
+<img src="https://ridealong-pilot.vercel.app/assets/story-pest-Bc-DYtAd.webp" alt="" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,26,0) 30%, rgba(21,23,26,0.88) 100%)"></div>
+<span style="position: absolute; top: 16px; left: 16px; background: #FFFFFF; color: #15171A; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
+<figcaption style="position: relative; padding: 24px; display: flex; flex-direction: column"><blockquote style="margin: 0; font-size: 18px; line-height: 1.4; font-weight: 600">[Quote: What the reps said when the recorders showed up]</blockquote>
+<div style="margin-top: 14px; font-size: 14px"><b>[Name], [Company]</b><br><span style="color: #D5D8DC">Owner · Pest control</span></div></figcaption>
+</figure>
+<figure style="position: relative; margin: 0; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
+<span style="align-self: flex-start; background: #ECE8DF; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
+<div><blockquote style="margin: 0; font-size: 18px; line-height: 1.45; font-weight: 600">[Quote: One line on what changed for their team]</blockquote></div>
+<figcaption style="display: flex; gap: 12px; align-items: center; font-size: 14px"><img src="https://ridealong-pilot.vercel.app/assets/avatar-plumbing-BYx1zuZw.webp" alt="" loading="lazy" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover"><span><b>[Name], [Company]</b><br><span style="color: #646A72">Owner · Plumbing</span></span></figcaption>
+</figure>
+<figure style="position: relative; margin: 0; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
+<span style="align-self: flex-start; background: #ECE8DF; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
+<div><blockquote style="margin: 0; font-size: 18px; line-height: 1.45; font-weight: 600">[Quote: A specific deal the tape helped them save]</blockquote></div>
+<figcaption style="display: flex; gap: 12px; align-items: center; font-size: 14px"><img src="https://ridealong-pilot.vercel.app/assets/avatar-roofing-mgr-B4LUwDmP.webp" alt="" loading="lazy" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover"><span><b>[Name], [Company]</b><br><span style="color: #646A72">Sales manager · Roofing</span></span></figcaption>
+</figure>
+<figure style="position: relative; margin: 0; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
+<span style="align-self: flex-start; background: #ECE8DF; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
+<div><blockquote style="margin: 0; font-size: 18px; line-height: 1.45; font-weight: 600">[Quote: Why they stopped guessing from “it went great”]</blockquote></div>
+<figcaption style="display: flex; gap: 12px; align-items: center; font-size: 14px"><img src="https://ridealong-pilot.vercel.app/assets/avatar-hvac-owner-Bz_RRtKS.webp" alt="" loading="lazy" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover"><span><b>[Name], [Company]</b><br><span style="color: #646A72">Owner · HVAC</span></span></figcaption>
+</figure>
 </div>
 </section>
 
