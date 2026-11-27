@@ -93,14 +93,16 @@ if ("IntersectionObserver" in window && !reduceMotion) {
   document.querySelectorAll(".count").forEach((el) => {
     const to = +el.dataset.to;
     if (to < 2) return;
-    el.textContent = "0";
+    const pre = el.dataset.prefix || "", suf = el.dataset.suffix || "";
+    const fmt = (n) => pre + (el.dataset.sep ? n.toLocaleString("en-US") : n) + suf;
+    el.textContent = fmt(0);
     new IntersectionObserver((entries, obs) => {
       if (!entries[0].isIntersecting) return;
       obs.disconnect();
       const start = performance.now();
       const tick = (now) => {
         const t = Math.min(1, (now - start) / 900);
-        el.textContent = Math.round(to * (1 - Math.pow(1 - t, 3)));
+        el.textContent = fmt(Math.round(to * (1 - Math.pow(1 - t, 3))));
         if (t < 1) requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);

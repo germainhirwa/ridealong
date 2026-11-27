@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ridealong · Draft</title>
+<meta name="description" content="A one-button wristband recorder for in-home sales reps, and a one-page scorecard for the owner after every appointment.">
+<meta property="og:title" content="Ridealong · Hear every appointment">
+<meta property="og:description" content="A wristband recorder for in-home sales reps, and a scorecard for you after every visit.">
+<meta property="og:image" content="assets/band_classic.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body>
+
+<div class="draft-bar">Draft for internal reference · customer numbers and testimonials are sample content</div>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo" aria-label="Ridealong home">
+      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><rect x="2" y="9" width="3" height="8" rx="1.5" fill="currentColor"/><rect x="8" y="4" width="3" height="18" rx="1.5" fill="currentColor"/><rect x="14" y="7" width="3" height="12" rx="1.5" fill="currentColor"/><circle cx="22" cy="13" r="3" fill="#1FA85A"/></svg>
+      Ridealong
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#roi">What it's worth</a>
+      <a href="#stories">Customers</a>
+      <a href="#trades">Trades</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#start" class="btn btn-sm">Book a 30-min demo</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="pill"><span class="dot"></span>For in-home sales teams: roofing, HVAC, solar, remodeling</p>
+      <h1>Hear every appointment. <span class="g">Close more of them.</span></h1>
+      <p class="lede">Your reps wear a one-button band into the home. After each visit you get a one-page scorecard: which steps they hit, which they skipped, and the exact minute the deal turned.</p>
+      <div class="when-open">
+        <form class="lead-form" data-source="hero">
+          <label for="hero-email" class="sr">Work email</label>
+          <input id="hero-email" type="email" required autocomplete="email" placeholder="you@yourcompany.com">
+          <button type="submit" class="btn btn-lg">See it on my sales process</button>
+        </form>
+      </div>
+      <div class="when-sent sent" role="status" hidden>Got it. We'll email you within one business day to pick a time for your 30-minute call.</div>
+      <div class="proof-line"><span class="avatars"><img src="https://ridealong-pilot.vercel.app/assets/avatar-plumbing-BYx1zuZw.webp" alt=""><img src="https://ridealong-pilot.vercel.app/assets/avatar-roofing-mgr-B4LUwDmP.webp" alt=""><img src="https://ridealong-pilot.vercel.app/assets/avatar-hvac-owner-Bz_RRtKS.webp" alt=""><img src="https://ridealong-pilot.vercel.app/assets/avatar-windows-B7SQDbG2.webp" alt=""></span><span>Used by <b>320+ in-home sales teams</b> across 31 states</span></div>
+<ul class="checks">
+        <li>30-minute call, built on your process</li>
+        <li>No long-term contract</li>
+        <li>Price on the call, before you commit</li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <img src="assets/band_classic.jpg" alt="The Ridealong band: a black wristband with one button and a green recording light" class="hero-img" fetchpriority="high">
+      <div class="score-card" aria-label="Sample scorecard">
+        <div class="sc-top"><b>HVAC visit · Mike R.</b><span class="tag-lost">Lost</span></div>
+        <div class="sc-meta">Tue 2:10 pm · 58 min · sample</div>
+        <ul class="sc-list">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" class="ic ok"><path d="M5 12l5 5L19 7"/></svg><span>Explained the old system</span><time>04:12</time></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" class="ic ok"><path d="M5 12l5 5L19 7"/></svg><span>Good / better / best</span><time>21:40</time></li>
+          <li class="miss"><svg viewBox="0 0 24 24" aria-hidden="true" class="ic no"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Skipped maintenance plan</span><time>missed</time></li>
+        </ul>
+        <div class="sc-quote"><span class="play" aria-hidden="true">▶</span> 52:18 &nbsp;“We need to think about it.”</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS (sample numbers) -->
+<section class="facts stats" aria-label="Ridealong by the numbers">
+  <div class="wrap facts-in">
+    <div class="fact"><b><span class="count" data-to="320" data-suffix="+">320+</span></b><span>sales teams coaching from every visit</span></div>
+    <div class="fact"><b><span class="count" data-to="184000" data-sep="1">184,000</span></b><span>appointments scored</span></div>
+    <div class="fact"><b><span class="count" data-to="41" data-prefix="$" data-suffix="M">$41M</span></b><span>in added revenue for our shops</span></div>
+    <div class="fact"><b><span class="count" data-to="9" data-prefix="+" data-suffix=" pts">+9 pts</span></b><span>average close-rate gain in 90 days</span></div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="wrap">
+    <div class="pain-head">
+      <p class="pain-quote">“It went great.”</p>
+      <p class="pain-text">That's every debrief. Then the deal doesn't close, and you'll never know if it was the price, the pitch, or the rep. You can't ride along with everyone, and Saturday ride-alongs only show you one rep on one good day.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card"><span class="num">01</span><h3>Deals walk, and you never learn why</h3><p>The debrief tells you nothing you can coach.</p></div>
+      <div class="pain-card"><span class="num">02</span><h3>Your best closer's pitch stays in their head</h3><p>Nobody else on the team gets to learn it.</p></div>
+      <div class="pain-card"><span class="num">03</span><h3>New reps learn on your leads</h3><p>Every visit they get wrong is a lost job.</p></div>
+    </div>
+    <div class="bridge">
+      <p>Ridealong lets you hear every appointment, not just the ones you ride along on.</p>
+      <a href="#start" class="btn">See it on my sales process</a>
+    </div>
+  </div>
+</section>
+
+<!-- KITCHEN TABLE -->
+<section class="wrap kitchen">
+  <figure class="kitchen-fig">
+    <img src="https://ridealong-pilot.vercel.app/assets/kitchen-table-CkrU3p9d.webp" alt="A rep walking homeowners through an estimate at their kitchen table" loading="lazy" decoding="async">
+    <figcaption>The sale happens at the kitchen table. <span>Now you can coach from what happens there.</span></figcaption>
+  </figure>
+</section>
+
+<!-- FEATURES -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow">What you get</p>
+    <h2>Coach from what happened at the kitchen table.</h2>
+    <div class="feat-grid">
+      <article class="card feat">
+        <img src="https://ridealong-pilot.vercel.app/assets/owner-truck-F5jf4Mlg.webp" alt="A shop owner reading a scorecard on his phone in the cab of his truck" loading="lazy" decoding="async">
+        <div class="feat-body"><span class="num">01</span><h3>See the exact minute a deal turned</h3><p>Every visit is scored against your own sales process. When a deal walks, you see the skipped step and hear what the homeowner said just before. Tap any line to play that moment.</p></div>
+      </article>
+      <article class="card feat">
+        <img src="https://ridealong-pilot.vercel.app/assets/sales-meeting-D9Xiq4Lt.webp" alt="A sales manager playing back a recorded moment to the team in a Monday meeting" loading="lazy" decoding="async">
+        <div class="feat-body"><span class="num">02</span><h3>Coach every rep, not just the ones you ride with</h3><p>See all your reps in one view: which steps each one does every time and which they skip. Coaching priorities come ranked, so your time goes where it moves the most deals.</p></div>
+      </article>
+      <article class="card feat">
+        <img src="https://ridealong-pilot.vercel.app/assets/new-rep-BbBboozf.webp" alt="A sales manager pointing to a line on a checklist while a new rep listens back to an appointment" loading="lazy" decoding="async">
+        <div class="feat-body"><span class="num">03</span><h3>Get new reps selling like your best one</h3><p>Compare a new hire with your top closer step by step. Then hand them the two minutes of tape where your best rep gets it right. Real clips, not role-play.</p></div>
+      </article>
+    </div>
+
+    <div class="card team">
+      <div class="team-head"><b>Team view · this month</b><span>Sample data · how often each rep hits each step</span></div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Rep</th><th>Found the problem</th><th>3 options</th><th>Maint. plan</th><th>Asked for sale</th></tr></thead>
+          <tbody>
+            <tr><td><b>Dana K.</b> · top closer</td><td>96%</td><td>91%</td><td>88%</td><td>94%</td></tr>
+            <tr><td><b>Mike R.</b></td><td>90%</td><td>84%</td><td><span class="flag">22% · coach first</span></td><td>81%</td></tr>
+            <tr><td><b>Jordan T.</b> · week 3</td><td>78%</td><td><span class="flag">40%</span></td><td>63%</td><td><span class="flag">35%</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI -->
+<section id="roi" class="sec">
+  <div class="wrap">
+    <div class="card roi">
+      <div class="roi-inputs">
+        <p class="eyebrow">What it's worth to you</p>
+        <h2 class="h2-sm">Put in your own numbers.</h2>
+        <div class="slider"><label for="r-reps"><span>Sales reps</span><b data-out="reps">8</b></label><input id="r-reps" type="range" min="1" max="60" value="8" data-k="reps"></div>
+        <div class="slider"><label for="r-appts"><span>Appointments per rep, per week</span><b data-out="appts">8</b></label><input id="r-appts" type="range" min="1" max="25" value="8" data-k="appts"></div>
+        <div class="slider"><label for="r-ticket"><span>Average job size</span><b data-out="ticketLabel">$12,000</b></label><input id="r-ticket" type="range" min="500" max="60000" step="500" value="12000" data-k="ticket"></div>
+        <div class="slider"><label for="r-lift"><span>Close-rate gain you'd expect from coaching</span><b>+<span data-out="lift">3</span> pts</b></label><input id="r-lift" type="range" min="1" max="15" value="3" data-k="lift"></div>
+      </div>
+      <div class="roi-out">
+        <div>
+          <div class="roi-label">Extra revenue per month</div>
+          <div class="roi-num" aria-live="polite" data-out="monthly">$99,840</div>
+          <p class="roi-sub">About <b data-out="deals">8.3</b> more closed jobs a month from appointments you're already running. That's <b data-out="yearly">$1,198,080</b> a year.</p>
+        </div>
+        <a href="#start" class="btn btn-light">Find out where my deals are walking</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="sec band">
+  <div class="wrap how">
+    <div>
+      <p class="eyebrow">How it works</p>
+      <h2>Nothing new for your reps to learn.</h2>
+      <ol class="steps">
+        <li><span>1</span><div><h3>Reps put on the band</h3><p>A light wristband that lasts the whole day. No app, no phone to unlock, nothing to install.</p></div></li>
+        <li><span>2</span><div><h3>Ask at the door, press once</h3><p>When the homeowner says yes, one press starts it and the green light stays on. If they say no, it stays off.</p></div></li>
+        <li><span>3</span><div><h3>You get the scorecard</h3><p>One page per visit, so you can go through a rep's whole day in a few minutes.</p></div></li>
+      </ol>
+      <a href="#start" class="btn">Book a 30-min demo</a>
+    </div>
+    <div class="how-art">
+      <img class="how-band" src="assets/band_metal.jpg" alt="Ridealong band with a brushed metal face" loading="lazy">
+      <img class="how-door" src="https://ridealong-pilot.vercel.app/assets/doorstep-CGbo5llB.webp" alt="A rep asking a homeowner at the front door before the appointment" loading="lazy" decoding="async">
+      <ul class="specs">
+        <li>Audio only, no camera</li>
+        <li>One-press start</li>
+        <li>Light on while recording</li>
+        <li>All-day battery</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TRADES -->
+<section id="trades" class="sec">
+  <div class="wrap">
+    <p class="eyebrow">Built around your process</p>
+    <h2>Every shop gets its own checklist.</h2>
+    <p class="sub">On the first call you walk us through how you sell. Here's what the scorecard checks in a few trades.</p>
+    <div class="trade-grid">
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/roofing-Ch_Q1vq4.webp" alt="Roofing sales appointment" loading="lazy" decoding="async"><div><h3>Roofing</h3><ul><li>Explained the damage found on the roof</li><li>Clear on what insurance covers and what it doesn't</li><li>Gave the price, then the payment options</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/hvac-CqxPD8zp.webp" alt="HVAC sales appointment" loading="lazy" decoding="async"><div><h3>HVAC</h3><ul><li>Explained what they found on the old system</li><li>Presented good, better and best options</li><li>Offered the maintenance agreement</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/solar-DSoUnDao.webp" alt="Solar sales appointment" loading="lazy" decoding="async"><div><h3>Solar</h3><ul><li>Had both decision makers at the table</li><li>Kept savings claims to what the proposal shows</li><li>Compared loan, lease and cash in plain numbers</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/windows-CusvoEsp.webp" alt="Windows and doors sales appointment" loading="lazy" decoding="async"><div><h3>Windows &amp; doors</h3><ul><li>Explained energy savings and rebates</li><li>Built value before giving the price</li><li>Asked for the sale the same day</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/remodeling-l1xrNB6G.webp" alt="Remodeling sales appointment" loading="lazy" decoding="async"><div><h3>Remodeling</h3><ul><li>Had every decision maker at the table</li><li>Pinned down budget and timeline</li><li>Asked for the sale before leaving</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/pest-CeJk8-3K.webp" alt="Pest control sales appointment" loading="lazy" decoding="async"><div><h3>Pest control</h3><ul><li>Explained what the inspection found</li><li>Offered the recurring plan</li><li>Set the first service date</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/plumbing-BIsXh7z6.webp" alt="Plumbing sales appointment" loading="lazy" decoding="async"><div><h3>Plumbing</h3><ul><li>Explained repair versus replace</li><li>Gave the price before starting work</li><li>Offered the membership plan</li></ul></div></article>
+      <article class="card trade trade-other"><div><h3>Sell something else in the home?</h3><p>If your reps sell face to face in the home, it works the same way. Tell us your steps on the call and we build the checklist with you.</p><a href="#start" class="btn btn-sm">Talk to us</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="stories" class="sec">
+  <div class="wrap">
+    <p class="eyebrow">Customers</p>
+    <h2>Owners who stopped guessing.</h2>
+    <p class="sub">Hear it from the shops that coach from every appointment.</p>
+    <div class="story-grid">
+      <figure class="card story story-wide"><img src="https://ridealong-pilot.vercel.app/assets/story-roofing-DmtvUKwL.webp" alt="" loading="lazy" style="object-position: 50% 18%"><figcaption><div class="result"><b>31% → 42%</b><span>close rate in three months</span></div><blockquote>“I used to ride along every Saturday and still had no idea what my guys said on a Tuesday. Now I skip straight to the two minutes where it went sideways. That's the whole job.”</blockquote><cite><b>Dale Brenneman, Brenneman Roofing &amp; Gutter</b>Owner · Roofing · Lancaster, PA</cite></figcaption></figure>
+      <figure class="card story"><img src="https://ridealong-pilot.vercel.app/assets/story-hvac-DHRbiqGm.webp" alt="" loading="lazy"><figcaption><blockquote>“First week, it showed me four of my six guys never brought up the maintenance plan. Not once. We were leaving that on every kitchen table.”</blockquote><cite><b>Tasha Greer, Comfort Line Heating &amp; Air</b>Sales manager · HVAC · Columbus, OH</cite></figcaption></figure>
+      <figure class="card story"><img src="https://ridealong-pilot.vercel.app/assets/story-solar-UzUKjAH0.webp" alt="" loading="lazy"><figcaption><blockquote>“My newest rep closed his first deal in week three. The last guy took two months. He learned the pitch off Marco's tape.”</blockquote><cite><b>Rafael Ortiz, Sunpath Energy</b>Owner · Solar · Mesa, AZ</cite></figcaption></figure>
+      <figure class="card story"><img src="https://ridealong-pilot.vercel.app/assets/story-remodeling-Bos1hRj4.webp" alt="" loading="lazy"><figcaption><div class="result"><b>$186K</b><span>in jobs saved last quarter</span></div><blockquote>“We play one clip every Monday morning. The guys argue about it, which is kind of the point.”</blockquote><cite><b>Kevin Lusk, Lusk Kitchen &amp; Bath</b>Sales manager · Remodeling · Raleigh, NC</cite></figcaption></figure>
+      <figure class="card story"><img src="https://ridealong-pilot.vercel.app/assets/story-pest-Bc-DYtAd.webp" alt="" loading="lazy"><figcaption><blockquote>“I figured the reps would hate it. Two weeks in, one of them asked if he could wear it on his Saturday appointments too.”</blockquote><cite><b>Darnell Hughes, Hughes Pest Solutions</b>Owner · Pest control · Memphis, TN</cite></figcaption></figure>
+    </div>
+    <div class="quote-row">
+      <figure class="card mini"><blockquote>“Cheaper than one lost water heater job a month. Easy call.”</blockquote><figcaption><img src="https://ridealong-pilot.vercel.app/assets/avatar-plumbing-BYx1zuZw.webp" alt=""><span><b>Gary Pruitt</b>Owner · Pruitt Plumbing</span></figcaption></figure>
+      <figure class="card mini"><blockquote>“Saved a $28K reroof because I heard the wife's insurance question nobody answered. Called her back the same day.”</blockquote><figcaption><img src="https://ridealong-pilot.vercel.app/assets/avatar-roofing-mgr-B4LUwDmP.webp" alt=""><span><b>Steve Kowalczyk</b>Sales manager · Ridgeline Exteriors</span></figcaption></figure>
+      <figure class="card mini"><blockquote>“‘It went great’ doesn't fly anymore. I can just go listen.”</blockquote><figcaption><img src="https://ridealong-pilot.vercel.app/assets/avatar-hvac-owner-Bz_RRtKS.webp" alt=""><span><b>Bill Okafor</b>Owner · Okafor Mechanical</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDING SHOPS -->
+<section class="sec founding-sec">
+  <div class="wrap">
+    <div class="founding">
+      <div>
+        <p class="eyebrow">Founding shops</p>
+        <h2 class="h2-sm">Be one of the first shops on Ridealong.</h2>
+        <p>We're working closely with a small group of in-home sales teams. You get:</p>
+        <ul class="perks">
+          <li>Your checklist built with us, on the first call</li>
+          <li>Direct access to the people building it</li>
+          <li>A say in what we build next</li>
+          <li>No long-term contract</li>
+        </ul>
+      </div>
+      <a href="#start" class="btn btn-lg">Apply for a spot</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="sec">
+  <div class="wrap narrow">
+    <h2>Questions owners ask.</h2>
+    <div class="faq">
+      <details><summary>Is it legal to record in a customer's home?<span class="plus" aria-hidden="true"></span></summary><p>Recording rules are set state by state, and some states require everyone in the conversation to agree. That's why nothing records until the rep asks at the door and the homeowner says yes. The green light stays on while it records, and it stays off if they say no. It records sound only, with no camera. Check your state's rules with your attorney before you start; we give you a consent script your reps can use word for word.</p></details>
+      <details><summary>How does the scoring work?<span class="plus" aria-hidden="true"></span></summary><p>You walk us through your sales process on the first call and we turn it into a checklist. Each recording is transcribed and checked against it automatically, with a timestamp on each line, so you can play back the moment and judge it yourself.</p></details>
+      <details><summary>What does it cost?<span class="plus" aria-hidden="true"></span></summary><p>A flat monthly fee based on how many reps you put on it. We give you the number on the first call, before you commit to anything.</p></details>
+      <details><summary>My reps already record on their phones. Why switch?<span class="plus" aria-hidden="true"></span></summary><p>If your phone setup already works, we'll tell you to keep it. The usual problems are phones dying by the last appointment, calls and texts coming in mid-pitch, and an app that has to be unlocked and opened every time.</p></details>
+      <details><summary>How do reps feel about being recorded?<span class="plus" aria-hidden="true"></span></summary><p>Some won't like it at first. Introduce it as coaching that helps them close, and use the tape to show what they did well, not only what they missed. We'll help you plan how to bring it up with your team.</p></details>
+      <details><summary>How long does setup take?<span class="plus" aria-hidden="true"></span></summary><p>About 30 minutes on a call to build your checklist. The bands ship after that, and your reps can wear them on their next appointment.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="start" class="final">
+  <div class="wrap final-in">
+    <h2>Your best closer can't ride along with everyone.</h2>
+    <p class="final-sub">Leave your email and we'll set up a 30-minute call to turn your sales process into a scorecard.</p>
+    <div class="when-open">
+      <form class="lead-form" data-source="final">
+        <label for="end-email" class="sr">Work email</label>
+        <input id="end-email" type="email" required autocomplete="email" placeholder="you@yourcompany.com">
+        <button type="submit" class="btn btn-lg btn-bright">Book my 30-min call</button>
+      </form>
+    </div>
+    <div class="when-sent sent sent-dark" role="status" hidden>Got it. We'll email you within one business day to pick a time.</div>
+    <ol class="next">
+      <li><b>1</b><span>30-minute call to map your sales process</span></li>
+      <li><b>2</b><span>We build your checklist and ship the bands</span></li>
+      <li><b>3</b><span>Scorecards from your reps' next appointments</span></li>
+    </ol>
+    <p class="fine">No long-term contract · Price on the call, before you commit</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>© 2026 Ridealong · A wristband recorder and a scorecard after every appointment, for teams that sell in the home.</span>
+    <span>Product images are renderings.</span>
+  </div>
+</footer>
+
+<!-- Mobile sticky CTA -->
+<a href="#start" class="mobile-cta">Book a 30-min demo</a>
+
+<script src="main.js?v=10"></script>
+</body>
+</html>
