@@ -230,7 +230,7 @@ details[open] .plus::after{transform:rotate(0)}
   .story-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:900px){
-  .hero-in,.how,.roi,.pain-head{grid-template-columns:1fr}
+  .hero-in,.how,.roi,.pain-head{grid-template-columns:minmax(0,1fr)}
   .hero-in{gap:48px}
   .score-card{left:16px}
   .feat-grid,.pain-grid{grid-template-columns:1fr}
@@ -253,6 +253,9 @@ details[open] .plus::after{transform:rotate(0)}
   .roi-out{padding:26px}
   .perks{grid-template-columns:1fr}
   .lead-form .btn{flex:1 1 100%}
+  .btn{white-space:normal;text-align:center;line-height:1.25;padding-top:12px;padding-bottom:12px}
+  .bridge .btn,.roi-out .btn{width:100%}
+  body{overflow-x:hidden}
   .nav .btn-sm{display:none}
   .mobile-cta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;height:54px;align-items:center;justify-content:center;border-radius:14px;background:var(--green);color:#fff;font-weight:700;text-decoration:none;box-shadow:0 10px 30px rgba(14,59,36,.35);transition:transform .25s,opacity .25s}
   .mobile-cta.away{transform:translateY(90px);opacity:0;pointer-events:none}
