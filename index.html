@@ -9,405 +9,297 @@
 <meta property="og:description" content="A wristband recorder for in-home sales reps, and a scorecard for you after every visit.">
 <meta property="og:image" content="assets/band_classic.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<style>
-html{scroll-behavior:smooth}body{margin:0;background:#F6F4EF}
-[hidden]{display:none !important}
-a{color:#15171A}a:hover{color:#16723F}
-.rl input[type=range]{width:100%;accent-color:#16723F;height:28px}
-.rl input[type=email]:focus{outline:3px solid #3DDC84;outline-offset:1px}
-.rl summary{cursor:pointer;list-style:none}.rl summary::-webkit-details-marker{display:none}
-.rl details[open] .plus{transform:rotate(45deg)}
-.rl .cta:hover{background:#0F5530}
-@media (max-width:900px){.rl .tgrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
-@media (max-width:600px){.rl .tgrid{grid-template-columns:1fr !important}.rl .tcard-wide{grid-column:auto !important}}
-@media (max-width:720px){.rl .h1{font-size:44px !important}.rl .h2{font-size:34px !important}.rl .navlinks{display:none !important}.rl .sec{padding:64px 20px !important}}
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="rl" style="font-family: Inter, system-ui, sans-serif; color: #15171A; background: #F6F4EF; width: 100%; min-height: 100vh">
 
-<!-- NAV -->
-<header style="position: sticky; top: 0; z-index: 10; background: rgba(246,244,239,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid #E3DFD6">
-<nav style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: Archivo, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.02em">
-<svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><rect x="2" y="9" width="3" height="8" rx="1.5" fill="#15171A"></rect><rect x="8" y="4" width="3" height="18" rx="1.5" fill="#15171A"></rect><rect x="14" y="7" width="3" height="12" rx="1.5" fill="#15171A"></rect><circle cx="22" cy="13" r="3" fill="#1FA85A"></circle></svg>
-Ridealong</a>
-<div class="navlinks" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
-<a href="#how" style="text-decoration: none">How it works</a>
-<a href="#roi" style="text-decoration: none">What it's worth</a>
-<a href="#stories" style="text-decoration: none">Customers</a>
-<a href="#trades" style="text-decoration: none">Trades</a>
-<a href="#faq" style="text-decoration: none">FAQ</a>
-</div>
-<a href="#start" class="cta" style="background: #16723F; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book a 30-min demo</a>
-</nav>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo" aria-label="Ridealong home">
+      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><rect x="2" y="9" width="3" height="8" rx="1.5" fill="currentColor"/><rect x="8" y="4" width="3" height="18" rx="1.5" fill="currentColor"/><rect x="14" y="7" width="3" height="12" rx="1.5" fill="currentColor"/><circle cx="22" cy="13" r="3" fill="#1FA85A"/></svg>
+      Ridealong
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#roi">What it's worth</a>
+      <a href="#trades">Trades</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#start" class="btn btn-sm">Book a 30-min demo</a>
+  </div>
 </header>
 
-<!-- HERO -->
-<section id="top" class="sec" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 88px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
-<div style="flex: 1 1 480px; min-width: 0">
-<div style="display: inline-flex; align-items: center; gap: 8px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 600; color: #3F444B">
-<span style="width: 8px; height: 8px; border-radius: 50%; background: #1FA85A"></span>For in-home sales teams: roofing, HVAC, solar, remodeling</div>
-<h1 class="h1" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 68px; line-height: 1.02; letter-spacing: -0.035em; margin: 22px 0 0">Hear every appointment.<br><span style="color: #16723F">Close more of them.</span></h1>
-<p style="font-size: 20px; line-height: 1.55; color: #3F444B; margin: 22px 0 0; max-width: 540px">Your reps wear a one-button band into the home. After each visit you get a one-page scorecard showing which steps they hit, which they skipped, and the exact minute the deal turned.</p>
-<div class="when-open">
-<form class="lead-form" style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px; max-width: 540px">
-<label for="hero-email" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Work email</label>
-<input id="hero-email" type="email" required placeholder="you@yourcompany.com" style="flex: 1 1 260px; min-width: 0; height: 56px; box-sizing: border-box; border: 1.5px solid #C9C4B8; border-radius: 12px; padding: 0 18px; font: 500 17px Inter, sans-serif; background: #FFFFFF; color: #15171A">
-<button type="submit" class="cta" style="flex: 0 0 auto; height: 56px; border: none; border-radius: 12px; background: #16723F; color: #FFFFFF; font: 600 17px Inter, sans-serif; padding: 0 26px; cursor: pointer">See it on my sales process</button>
-</form>
-</div>
-<div class="when-sent" hidden>
-<div role="status" style="margin-top: 32px; max-width: 540px; background: #E5F4EA; border: 1px solid #A9D9B9; border-radius: 12px; padding: 18px 20px; font-size: 17px; font-weight: 500; color: #0F5530">Got it. We'll email you within one business day to pick a time for your 30-minute call.</div>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 18px; font-size: 14px; color: #555B63; font-weight: 500">
-<span style="display: inline-flex; gap: 6px; align-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"></path></svg>30-minute call, built on your process</span>
-<span style="display: inline-flex; gap: 6px; align-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"></path></svg>No long-term contract</span>
-<span style="display: inline-flex; gap: 6px; align-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"></path></svg>Price on the call, before you commit</span>
-</div>
-</div>
+<main id="top">
 
-<div style="flex: 1 1 440px; min-width: 0; position: relative">
-<img src="assets/band_classic.jpg" alt="The Ridealong band, a black wristband with one button and a green recording light" style="width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover; border-radius: 22px; display: block">
-<div style="position: absolute; left: -28px; bottom: -36px; width: 300px; max-width: 80%; background: #FFFFFF; border-radius: 16px; box-shadow: 0 18px 50px rgba(21,23,26,0.18); padding: 18px 18px 14px; font-size: 13px">
-<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-weight: 700; font-size: 14px">HVAC visit · Mike R.</span><span style="color: #8A3B12; background: #FBE9DE; border-radius: 6px; padding: 2px 8px; font-weight: 600; font-size: 12px">Lost</span></div>
-<div style="color: #646A72; margin-top: 2px">Tue 2:10 pm · 58 min · sample</div>
-<div style="display: flex; flex-direction: column; gap: 9px; margin-top: 14px">
-<div style="display: flex; gap: 8px; align-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12l5 5L19 7"></path></svg><span style="flex: 1">Explained the old system</span><span style="color: #646A72">04:12</span></div>
-<div style="display: flex; gap: 8px; align-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12l5 5L19 7"></path></svg><span style="flex: 1">Good / better / best</span><span style="color: #646A72">21:40</span></div>
-<div style="display: flex; gap: 8px; align-items: center; background: #FBE9DE; margin: 0 -8px; padding: 6px 8px; border-radius: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B4471A" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg><span style="flex: 1; font-weight: 600; color: #8A3B12">Skipped maintenance plan</span><span style="color: #8A3B12">missed</span></div>
-</div>
-<div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #EEEBE4; color: #3F444B">▶ 52:18 &nbsp;“We need to think about it.”</div>
-</div>
-</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="pill"><span class="dot"></span>For in-home sales teams: roofing, HVAC, solar, remodeling</p>
+      <h1>Hear every appointment. <span class="g">Close more of them.</span></h1>
+      <p class="lede">Your reps wear a one-button band into the home. After each visit you get a one-page scorecard: which steps they hit, which they skipped, and the exact minute the deal turned.</p>
+      <div class="when-open">
+        <form class="lead-form" data-source="hero">
+          <label for="hero-email" class="sr">Work email</label>
+          <input id="hero-email" type="email" required autocomplete="email" placeholder="you@yourcompany.com">
+          <button type="submit" class="btn btn-lg">See it on my sales process</button>
+        </form>
+      </div>
+      <div class="when-sent sent" role="status" hidden>Got it. We'll email you within one business day to pick a time for your 30-minute call.</div>
+      <ul class="checks">
+        <li>30-minute call, built on your process</li>
+        <li>No long-term contract</li>
+        <li>Price on the call, before you commit</li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <img src="assets/band_classic.jpg" alt="The Ridealong band: a black wristband with one button and a green recording light" class="hero-img" fetchpriority="high">
+      <div class="score-card" aria-label="Sample scorecard">
+        <div class="sc-top"><b>HVAC visit · Mike R.</b><span class="tag-lost">Lost</span></div>
+        <div class="sc-meta">Tue 2:10 pm · 58 min · sample</div>
+        <ul class="sc-list">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" class="ic ok"><path d="M5 12l5 5L19 7"/></svg><span>Explained the old system</span><time>04:12</time></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" class="ic ok"><path d="M5 12l5 5L19 7"/></svg><span>Good / better / best</span><time>21:40</time></li>
+          <li class="miss"><svg viewBox="0 0 24 24" aria-hidden="true" class="ic no"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Skipped maintenance plan</span><time>missed</time></li>
+        </ul>
+        <div class="sc-quote"><span class="play" aria-hidden="true">▶</span> 52:18 &nbsp;“We need to think about it.”</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- PAIN STRIP -->
-<section style="background: #15171A; color: #F6F4EF">
-<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
-<div style="flex: 1 1 420px">
-<p style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 54px; line-height: 1.05; letter-spacing: -0.03em; margin: 0">“It went great.”</p>
-<p style="font-size: 19px; line-height: 1.55; color: #C9CCD1; margin: 16px 0 0; max-width: 460px">That's every debrief. Then the deal doesn't close, and you'll never know if it was the price, the pitch, or the rep. You can't ride along with everyone, and Saturday ride-alongs only show you one rep on one good day.</p>
-</div>
-<div style="flex: 1 1 420px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px">
-<div style="background: #202328; border-radius: 14px; padding: 20px"><div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 17px">Deals walk, and you never learn why</div><div style="font-size: 14px; color: #AEB3BA; margin-top: 6px; line-height: 1.45">The debrief tells you nothing you can coach.</div></div>
-<div style="background: #202328; border-radius: 14px; padding: 20px"><div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 17px">Your best closer's pitch stays in their head</div><div style="font-size: 14px; color: #AEB3BA; margin-top: 6px; line-height: 1.45">Nobody else on the team gets to learn it.</div></div>
-<div style="background: #202328; border-radius: 14px; padding: 20px"><div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 17px">New reps learn on your leads</div><div style="font-size: 14px; color: #AEB3BA; margin-top: 6px; line-height: 1.45">Every visit they get wrong is a lost job.</div></div>
-</div>
-<div style="flex: 1 1 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid #2A2E34; padding-top: 32px">
-<p style="margin: 0; font-family: Archivo, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.01em">Ridealong lets you hear every appointment, not just the ones you ride along on.</p>
-<a href="#start" style="flex: 0 0 auto; background: #3DDC84; color: #0B2A17; text-decoration: none; font-weight: 700; font-size: 17px; padding: 16px 24px; border-radius: 12px">See it on my sales process</a>
-</div>
-</div>
+<!-- FACTS STRIP (counts up on view) -->
+<section class="facts" aria-label="Ridealong at a glance">
+  <div class="wrap facts-in">
+    <div class="fact"><b><span class="count" data-to="1">1</span> press</b><span>to start recording</span></div>
+    <div class="fact"><b><span class="count" data-to="0">0</span> apps</b><span>for reps to install</span></div>
+    <div class="fact"><b><span class="count" data-to="30">30</span> min</b><span>to set up your checklist</span></div>
+    <div class="fact"><b><span class="count" data-to="1">1</span> page</b><span>per visit to review</span></div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="wrap">
+    <div class="pain-head">
+      <p class="pain-quote">“It went great.”</p>
+      <p class="pain-text">That's every debrief. Then the deal doesn't close, and you'll never know if it was the price, the pitch, or the rep. You can't ride along with everyone, and Saturday ride-alongs only show you one rep on one good day.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card"><span class="num">01</span><h3>Deals walk, and you never learn why</h3><p>The debrief tells you nothing you can coach.</p></div>
+      <div class="pain-card"><span class="num">02</span><h3>Your best closer's pitch stays in their head</h3><p>Nobody else on the team gets to learn it.</p></div>
+      <div class="pain-card"><span class="num">03</span><h3>New reps learn on your leads</h3><p>Every visit they get wrong is a lost job.</p></div>
+    </div>
+    <div class="bridge">
+      <p>Ridealong lets you hear every appointment, not just the ones you ride along on.</p>
+      <a href="#start" class="btn">See it on my sales process</a>
+    </div>
+  </div>
 </section>
 
 <!-- KITCHEN TABLE -->
-<section style="position: relative; max-width: 1200px; margin: 72px auto 0; padding: 0 24px">
-<div style="position: relative; border-radius: 24px; overflow: hidden">
-<img src="https://ridealong-pilot.vercel.app/assets/kitchen-table-CkrU3p9d.webp" alt="A rep walking homeowners through an estimate at their kitchen table" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 21 / 9; min-height: 320px; object-fit: cover; display: block">
-<div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(21,23,26,0.78) 0%, rgba(21,23,26,0.15) 65%)"></div>
-<p style="position: absolute; left: 40px; bottom: 36px; right: 40px; max-width: 560px; margin: 0; color: #FFFFFF; font-family: Archivo, sans-serif; font-weight: 800; font-size: clamp(26px, 3.4vw, 42px); line-height: 1.08; letter-spacing: -0.02em">The sale happens at the kitchen table. Now you can coach from what happens there.</p>
-</div>
+<section class="wrap kitchen">
+  <figure class="kitchen-fig">
+    <img src="https://ridealong-pilot.vercel.app/assets/kitchen-table-CkrU3p9d.webp" alt="A rep walking homeowners through an estimate at their kitchen table" loading="lazy" decoding="async">
+    <figcaption>The sale happens at the kitchen table. <span>Now you can coach from what happens there.</span></figcaption>
+  </figure>
 </section>
 
 <!-- FEATURES -->
-<section class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px 40px">
-<p style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #16723F; margin: 0">What you get</p>
-<h2 class="h2" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 50px; line-height: 1.05; letter-spacing: -0.03em; margin: 12px 0 0; max-width: 760px">Coach from what happened at the kitchen table.</h2>
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow">What you get</p>
+    <h2>Coach from what happened at the kitchen table.</h2>
+    <div class="feat-grid">
+      <article class="card feat">
+        <img src="https://ridealong-pilot.vercel.app/assets/owner-truck-F5jf4Mlg.webp" alt="A shop owner reading a scorecard on his phone in the cab of his truck" loading="lazy" decoding="async">
+        <div class="feat-body"><span class="num">01</span><h3>See the exact minute a deal turned</h3><p>Every visit is scored against your own sales process. When a deal walks, you see the skipped step and hear what the homeowner said just before. Tap any line to play that moment.</p></div>
+      </article>
+      <article class="card feat">
+        <img src="https://ridealong-pilot.vercel.app/assets/sales-meeting-D9Xiq4Lt.webp" alt="A sales manager playing back a recorded moment to the team in a Monday meeting" loading="lazy" decoding="async">
+        <div class="feat-body"><span class="num">02</span><h3>Coach every rep, not just the ones you ride with</h3><p>See all your reps in one view: which steps each one does every time and which they skip. Coaching priorities come ranked, so your time goes where it moves the most deals.</p></div>
+      </article>
+      <article class="card feat">
+        <img src="https://ridealong-pilot.vercel.app/assets/new-rep-BbBboozf.webp" alt="A sales manager pointing to a line on a checklist while a new rep listens back to an appointment" loading="lazy" decoding="async">
+        <div class="feat-body"><span class="num">03</span><h3>Get new reps selling like your best one</h3><p>Compare a new hire with your top closer step by step. Then hand them the two minutes of tape where your best rep gets it right. Real clips, not role-play.</p></div>
+      </article>
+    </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 48px">
-<div style="flex: 1 1 320px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column"><img src="https://ridealong-pilot.vercel.app/assets/owner-truck-F5jf4Mlg.webp" alt="A shop owner reading a scorecard on his phone in the cab of his truck" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block"><div style="padding: 26px 30px 30px">
-<div style="font-size: 13px; font-weight: 700; color: #646A72">01</div>
-<h3 style="font-family: Archivo, sans-serif; font-size: 24px; letter-spacing: -0.01em; margin: 10px 0 0">See the exact minute a deal turned</h3>
-<p style="font-size: 16px; line-height: 1.55; color: #3F444B; margin: 10px 0 0">Every visit is scored against your own sales process. When a deal walks, you see the skipped step and hear what the homeowner said just before. Tap any line to play that moment.</p>
-</div>
-</div>
-<div style="flex: 1 1 320px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column"><img src="https://ridealong-pilot.vercel.app/assets/sales-meeting-D9Xiq4Lt.webp" alt="A sales manager playing back a recorded moment to the team in a Monday meeting" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block"><div style="padding: 26px 30px 30px">
-<div style="font-size: 13px; font-weight: 700; color: #646A72">02</div>
-<h3 style="font-family: Archivo, sans-serif; font-size: 24px; letter-spacing: -0.01em; margin: 10px 0 0">Coach every rep, not just the ones you ride with</h3>
-<p style="font-size: 16px; line-height: 1.55; color: #3F444B; margin: 10px 0 0">See all your reps in one view: which steps each one does every time and which they skip. Coaching priorities come ranked, so your time goes where it moves the most deals.</p>
-</div>
-</div>
-<div style="flex: 1 1 320px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column"><img src="https://ridealong-pilot.vercel.app/assets/new-rep-BbBboozf.webp" alt="A sales manager pointing to a line on a checklist while a new rep listens back to an appointment with her" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block"><div style="padding: 26px 30px 30px">
-<div style="font-size: 13px; font-weight: 700; color: #646A72">03</div>
-<h3 style="font-family: Archivo, sans-serif; font-size: 24px; letter-spacing: -0.01em; margin: 10px 0 0">Get new reps selling like your best one</h3>
-<p style="font-size: 16px; line-height: 1.55; color: #3F444B; margin: 10px 0 0">Compare a new hire with your top closer step by step. Then hand them the two minutes of tape where your best rep gets it right. Real clips, not role-play.</p>
-</div>
-</div>
-</div>
-
-<!-- team view mock -->
-<div style="margin-top: 20px; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 28px; overflow-x: auto">
-<div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; min-width: 620px"><span style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 20px">Team view · this month</span><span style="font-size: 13px; color: #646A72">Sample data · how often each rep hits each step</span></div>
-<div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; gap: 0; margin-top: 18px; font-size: 15px; min-width: 620px">
-<div style="padding: 10px 0; color: #646A72; font-size: 13px; font-weight: 600; border-bottom: 1px solid #EEEBE4">Rep</div><div style="padding: 10px 0; color: #646A72; font-size: 13px; font-weight: 600; border-bottom: 1px solid #EEEBE4">Found the problem</div><div style="padding: 10px 0; color: #646A72; font-size: 13px; font-weight: 600; border-bottom: 1px solid #EEEBE4">3 options</div><div style="padding: 10px 0; color: #646A72; font-size: 13px; font-weight: 600; border-bottom: 1px solid #EEEBE4">Maint. plan</div><div style="padding: 10px 0; color: #646A72; font-size: 13px; font-weight: 600; border-bottom: 1px solid #EEEBE4">Asked for sale</div>
-<div style="padding: 12px 0; font-weight: 600; border-bottom: 1px solid #EEEBE4">Dana K. · top closer</div><div style="padding: 12px 0; border-bottom: 1px solid #EEEBE4">96%</div><div style="padding: 12px 0; border-bottom: 1px solid #EEEBE4">91%</div><div style="padding: 12px 0; border-bottom: 1px solid #EEEBE4">88%</div><div style="padding: 12px 0; border-bottom: 1px solid #EEEBE4">94%</div>
-<div style="padding: 12px 0; font-weight: 600; border-bottom: 1px solid #EEEBE4">Mike R.</div><div style="padding: 12px 0; border-bottom: 1px solid #EEEBE4">90%</div><div style="padding: 12px 0; border-bottom: 1px solid #EEEBE4">84%</div><div style="padding: 12px 0; border-bottom: 1px solid #EEEBE4"><span style="background: #FBE9DE; color: #8A3B12; font-weight: 700; border-radius: 6px; padding: 3px 8px">22% · coach first</span></div><div style="padding: 12px 0; border-bottom: 1px solid #EEEBE4">81%</div>
-<div style="padding: 12px 0; font-weight: 600">Jordan T. · week 3</div><div style="padding: 12px 0">78%</div><div style="padding: 12px 0"><span style="background: #FBE9DE; color: #8A3B12; font-weight: 700; border-radius: 6px; padding: 3px 8px">40%</span></div><div style="padding: 12px 0">63%</div><div style="padding: 12px 0"><span style="background: #FBE9DE; color: #8A3B12; font-weight: 700; border-radius: 6px; padding: 3px 8px">35%</span></div>
-</div>
-</div>
+    <div class="card team">
+      <div class="team-head"><b>Team view · this month</b><span>Sample data · how often each rep hits each step</span></div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Rep</th><th>Found the problem</th><th>3 options</th><th>Maint. plan</th><th>Asked for sale</th></tr></thead>
+          <tbody>
+            <tr><td><b>Dana K.</b> · top closer</td><td>96%</td><td>91%</td><td>88%</td><td>94%</td></tr>
+            <tr><td><b>Mike R.</b></td><td>90%</td><td>84%</td><td><span class="flag">22% · coach first</span></td><td>81%</td></tr>
+            <tr><td><b>Jordan T.</b> · week 3</td><td>78%</td><td><span class="flag">40%</span></td><td>63%</td><td><span class="flag">35%</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ROI -->
-<section id="roi" class="sec" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px">
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 24px; padding: 44px; display: flex; flex-wrap: wrap; gap: 44px">
-<div style="flex: 1 1 420px; min-width: 0">
-<p style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #16723F; margin: 0">What it's worth to you</p>
-<h2 class="h2" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.08; letter-spacing: -0.03em; margin: 12px 0 28px">Put in your own numbers.</h2>
-<div style="display: flex; flex-direction: column; gap: 22px">
-<div><label for="r-reps" style="display: flex; justify-content: space-between; font-weight: 600; font-size: 15px"><span>Sales reps</span><span><span data-out="reps">8</span></span></label><input id="r-reps" type="range" min="1" max="60" value="8" data-k="reps"></div>
-<div><label for="r-appts" style="display: flex; justify-content: space-between; font-weight: 600; font-size: 15px"><span>Appointments per rep, per week</span><span><span data-out="appts">8</span></span></label><input id="r-appts" type="range" min="1" max="25" value="8" data-k="appts"></div>
-<div><label for="r-ticket" style="display: flex; justify-content: space-between; font-weight: 600; font-size: 15px"><span>Average job size</span><span><span data-out="ticketLabel">$12,000</span></span></label><input id="r-ticket" type="range" min="500" max="60000" step="500" value="12000" data-k="ticket"></div>
-<div><label for="r-lift" style="display: flex; justify-content: space-between; font-weight: 600; font-size: 15px"><span>Close-rate gain you'd expect from coaching</span><span>+<span data-out="lift">3</span> pts</span></label><input id="r-lift" type="range" min="1" max="15" value="3" data-k="lift"></div>
-</div>
-</div>
-<div style="flex: 1 1 340px; background: #15171A; color: #F6F4EF; border-radius: 18px; padding: 34px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
-<div>
-<div style="font-size: 15px; color: #AEB3BA">Extra revenue per month</div>
-<div aria-live="polite" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 60px; letter-spacing: -0.03em; color: #3DDC84; margin-top: 6px; line-height: 1"><span data-out="monthly">$0</span></div>
-<div style="font-size: 16px; color: #C9CCD1; margin-top: 14px; line-height: 1.5">That's about <strong style="color: #FFFFFF"><span data-out="deals">0</span> more closed jobs</strong> a month from appointments you're already running, or <strong style="color: #FFFFFF"><span data-out="yearly">$0</span></strong> a year.</div>
-</div>
-<a href="#start" class="cta" style="background: #16723F; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; text-align: center; padding: 16px; border-radius: 12px">Find out where my deals are walking</a>
-</div>
-</div>
+<section id="roi" class="sec">
+  <div class="wrap">
+    <div class="card roi">
+      <div class="roi-inputs">
+        <p class="eyebrow">What it's worth to you</p>
+        <h2 class="h2-sm">Put in your own numbers.</h2>
+        <div class="slider"><label for="r-reps"><span>Sales reps</span><b data-out="reps">8</b></label><input id="r-reps" type="range" min="1" max="60" value="8" data-k="reps"></div>
+        <div class="slider"><label for="r-appts"><span>Appointments per rep, per week</span><b data-out="appts">8</b></label><input id="r-appts" type="range" min="1" max="25" value="8" data-k="appts"></div>
+        <div class="slider"><label for="r-ticket"><span>Average job size</span><b data-out="ticketLabel">$12,000</b></label><input id="r-ticket" type="range" min="500" max="60000" step="500" value="12000" data-k="ticket"></div>
+        <div class="slider"><label for="r-lift"><span>Close-rate gain you'd expect from coaching</span><b>+<span data-out="lift">3</span> pts</b></label><input id="r-lift" type="range" min="1" max="15" value="3" data-k="lift"></div>
+      </div>
+      <div class="roi-out">
+        <div>
+          <div class="roi-label">Extra revenue per month</div>
+          <div class="roi-num" aria-live="polite" data-out="monthly">$99,840</div>
+          <p class="roi-sub">About <b data-out="deals">8.3</b> more closed jobs a month from appointments you're already running. That's <b data-out="yearly">$1,198,080</b> a year.</p>
+        </div>
+        <a href="#start" class="btn btn-light">Find out where my deals are walking</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section id="how" style="background: #ECE8DF">
-<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
-<div style="flex: 1 1 440px; min-width: 0">
-<p style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #16723F; margin: 0">How it works</p>
-<h2 class="h2" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 50px; line-height: 1.05; letter-spacing: -0.03em; margin: 12px 0 0">Nothing new for your reps to learn.</h2>
-<ol style="list-style: none; padding: 0; margin: 36px 0 0; display: flex; flex-direction: column; gap: 26px">
-<li style="display: flex; gap: 18px"><span style="flex: 0 0 40px; height: 40px; border-radius: 50%; background: #15171A; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">1</span><div><div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 21px">Reps put on the band</div><div style="font-size: 16px; color: #3F444B; margin-top: 4px; line-height: 1.5">A light wristband that lasts the whole day. No app, no phone to unlock, nothing to install.</div></div></li>
-<li style="display: flex; gap: 18px"><span style="flex: 0 0 40px; height: 40px; border-radius: 50%; background: #15171A; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">2</span><div><div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 21px">Ask at the door, press once</div><div style="font-size: 16px; color: #3F444B; margin-top: 4px; line-height: 1.5">When the homeowner says yes, one press starts it and the green light stays on. If they say no, it stays off.</div></div></li>
-<li style="display: flex; gap: 18px"><span style="flex: 0 0 40px; height: 40px; border-radius: 50%; background: #15171A; color: #FFFFFF; font-weight: 700; display: flex; align-items: center; justify-content: center">3</span><div><div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 21px">You get the scorecard</div><div style="font-size: 16px; color: #3F444B; margin-top: 4px; line-height: 1.5">One page per visit, so you can go through a rep's whole day in a few minutes.</div></div></li>
-</ol>
-</div>
-<div style="flex: 1 1 440px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
-<img src="assets/band_metal.jpg" alt="Ridealong band with a brushed metal face" style="grid-column: span 2; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 18px; display: block">
-<img src="https://ridealong-pilot.vercel.app/assets/doorstep-CGbo5llB.webp" alt="A rep asking a homeowner at the front door before the appointment" loading="lazy" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 18px; display: block">
-<div style="background: #15171A; color: #F6F4EF; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; justify-content: center; gap: 12px; font-size: 15px">
-<div style="display: flex; gap: 10px; align-items: center"><span style="width: 10px; height: 10px; border-radius: 50%; background: #3DDC84"></span>Audio only, no camera</div>
-<div style="display: flex; gap: 10px; align-items: center"><span style="width: 10px; height: 10px; border-radius: 50%; background: #3DDC84"></span>One-press start</div>
-<div style="display: flex; gap: 10px; align-items: center"><span style="width: 10px; height: 10px; border-radius: 50%; background: #3DDC84"></span>Light on while recording</div>
-<div style="display: flex; gap: 10px; align-items: center"><span style="width: 10px; height: 10px; border-radius: 50%; background: #3DDC84"></span>All-day battery</div>
-</div>
-</div>
-</div>
+<section id="how" class="sec band">
+  <div class="wrap how">
+    <div>
+      <p class="eyebrow">How it works</p>
+      <h2>Nothing new for your reps to learn.</h2>
+      <ol class="steps">
+        <li><span>1</span><div><h3>Reps put on the band</h3><p>A light wristband that lasts the whole day. No app, no phone to unlock, nothing to install.</p></div></li>
+        <li><span>2</span><div><h3>Ask at the door, press once</h3><p>When the homeowner says yes, one press starts it and the green light stays on. If they say no, it stays off.</p></div></li>
+        <li><span>3</span><div><h3>You get the scorecard</h3><p>One page per visit, so you can go through a rep's whole day in a few minutes.</p></div></li>
+      </ol>
+      <a href="#start" class="btn">Book a 30-min demo</a>
+    </div>
+    <div class="how-art">
+      <img class="how-band" src="assets/band_metal.jpg" alt="Ridealong band with a brushed metal face" loading="lazy">
+      <img class="how-door" src="https://ridealong-pilot.vercel.app/assets/doorstep-CGbo5llB.webp" alt="A rep asking a homeowner at the front door before the appointment" loading="lazy" decoding="async">
+      <ul class="specs">
+        <li>Audio only, no camera</li>
+        <li>One-press start</li>
+        <li>Light on while recording</li>
+        <li>All-day battery</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <!-- TRADES -->
-<section id="trades" class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px 40px">
-<p style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #16723F; margin: 0">Built around your process</p>
-<h2 class="h2" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 50px; line-height: 1.05; letter-spacing: -0.03em; margin: 12px 0 0; max-width: 760px">Every shop gets its own checklist.</h2>
-<p style="font-size: 18px; color: #3F444B; margin: 14px 0 0; max-width: 640px; line-height: 1.55">On the first call you walk us through how you sell. Here's what the scorecard checks in a few trades.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; margin-top: 40px">
-
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/roofing-Ch_Q1vq4.webp" alt="Roofing sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Roofing</div>
-<ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
-<li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Explained the damage found on the roof</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Clear on what insurance covers and what it doesn’t</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Gave the price, then the payment options</li>
-</ul>
-</div>
-</div>
-
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/hvac-CqxPD8zp.webp" alt="HVAC sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">HVAC</div>
-<ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
-<li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Explained what they found on the old system</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Presented good, better and best options</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Offered the maintenance agreement</li>
-</ul>
-</div>
-</div>
-
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/solar-DSoUnDao.webp" alt="Solar sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Solar</div>
-<ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
-<li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Had both decision makers at the table</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Kept savings claims to what the proposal shows</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Compared loan, lease and cash in plain numbers</li>
-</ul>
-</div>
-</div>
-
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/windows-CusvoEsp.webp" alt="Windows & doors sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Windows &amp; doors</div>
-<ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
-<li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Explained energy savings and rebates</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Built value before giving the price</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Asked for the sale the same day</li>
-</ul>
-</div>
-</div>
-
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/remodeling-l1xrNB6G.webp" alt="Remodeling sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Remodeling</div>
-<ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
-<li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Had every decision maker at the table</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Pinned down budget and timeline</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Asked for the sale before leaving</li>
-</ul>
-</div>
-</div>
-
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/pest-CeJk8-3K.webp" alt="Pest control sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Pest control</div>
-<ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
-<li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Explained what the inspection found</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Offered the recurring plan</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Set the first service date</li>
-</ul>
-</div>
-</div>
-
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; overflow: hidden"><img src="https://ridealong-pilot.vercel.app/assets/plumbing-BIsXh7z6.webp" alt="Plumbing sales appointment" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block"><div style="padding: 20px 22px 22px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Plumbing</div>
-<ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
-<li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Explained repair versus replace</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Gave the price before starting work</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Offered the membership plan</li>
-</ul>
-</div>
-</div>
-
-<div style="background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 16px; padding: 22px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 19px">Something else?</div>
-<ul style="list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 9px; font-size: 15px; color: #3F444B; line-height: 1.4">
-<li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>If your reps sell face to face in the home, it works the same way</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>Tell us your steps on the call</li><li style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16723F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 2px"><path d="M5 12l5 5L19 7"></path></svg>We build the checklist with you</li>
-</ul>
-</div>
-
-</div>
+<section id="trades" class="sec">
+  <div class="wrap">
+    <p class="eyebrow">Built around your process</p>
+    <h2>Every shop gets its own checklist.</h2>
+    <p class="sub">On the first call you walk us through how you sell. Here's what the scorecard checks in a few trades.</p>
+    <div class="trade-grid">
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/roofing-Ch_Q1vq4.webp" alt="Roofing sales appointment" loading="lazy" decoding="async"><div><h3>Roofing</h3><ul><li>Explained the damage found on the roof</li><li>Clear on what insurance covers and what it doesn't</li><li>Gave the price, then the payment options</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/hvac-CqxPD8zp.webp" alt="HVAC sales appointment" loading="lazy" decoding="async"><div><h3>HVAC</h3><ul><li>Explained what they found on the old system</li><li>Presented good, better and best options</li><li>Offered the maintenance agreement</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/solar-DSoUnDao.webp" alt="Solar sales appointment" loading="lazy" decoding="async"><div><h3>Solar</h3><ul><li>Had both decision makers at the table</li><li>Kept savings claims to what the proposal shows</li><li>Compared loan, lease and cash in plain numbers</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/windows-CusvoEsp.webp" alt="Windows and doors sales appointment" loading="lazy" decoding="async"><div><h3>Windows &amp; doors</h3><ul><li>Explained energy savings and rebates</li><li>Built value before giving the price</li><li>Asked for the sale the same day</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/remodeling-l1xrNB6G.webp" alt="Remodeling sales appointment" loading="lazy" decoding="async"><div><h3>Remodeling</h3><ul><li>Had every decision maker at the table</li><li>Pinned down budget and timeline</li><li>Asked for the sale before leaving</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/pest-CeJk8-3K.webp" alt="Pest control sales appointment" loading="lazy" decoding="async"><div><h3>Pest control</h3><ul><li>Explained what the inspection found</li><li>Offered the recurring plan</li><li>Set the first service date</li></ul></div></article>
+      <article class="card trade"><img src="https://ridealong-pilot.vercel.app/assets/plumbing-BIsXh7z6.webp" alt="Plumbing sales appointment" loading="lazy" decoding="async"><div><h3>Plumbing</h3><ul><li>Explained repair versus replace</li><li>Gave the price before starting work</li><li>Offered the membership plan</li></ul></div></article>
+      <article class="card trade trade-other"><div><h3>Sell something else in the home?</h3><p>If your reps sell face to face in the home, it works the same way. Tell us your steps on the call and we build the checklist with you.</p><a href="#start" class="btn btn-sm">Talk to us</a></div></article>
+    </div>
+  </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section id="stories" class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px 32px">
-<p style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #16723F; margin: 0">Customers</p>
-<h2 class="h2" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 50px; line-height: 1.05; letter-spacing: -0.03em; margin: 12px 0 0">Owners who stopped guessing.</h2>
-<p style="font-size: 18px; color: #3F444B; margin: 14px 0 0; line-height: 1.55">Hear it from the shops that coach from every appointment.</p>
-<div class="tgrid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 40px">
-<figure class="tcard tcard-wide" style="grid-column: span 2; position: relative; margin: 0; min-height: 420px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF">
-<img src="https://ridealong-pilot.vercel.app/assets/story-roofing-DmtvUKwL.webp" alt="" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
-<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,26,0) 30%, rgba(21,23,26,0.88) 100%)"></div>
-<span style="position: absolute; top: 16px; left: 16px; background: #FFFFFF; color: #15171A; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
-<figcaption style="position: relative; padding: 24px; display: flex; flex-direction: column"><div style="display: inline-flex; flex-direction: column; background: #3DDC84; color: #0B2A17; border-radius: 12px; padding: 10px 14px; margin-bottom: 14px; align-self: flex-start"><b style="font-family: Archivo, sans-serif; font-size: 20px">[Result]</b><span style="font-size: 13px; font-weight: 600">[What improved, in their numbers]</span></div><blockquote style="margin: 0; font-size: 22px; line-height: 1.4; font-weight: 600">[Quote: Before and after: how they coached, and what it did to their close rate]</blockquote>
-<div style="margin-top: 14px; font-size: 14px"><b>[Name], [Company]</b><br><span style="color: #D5D8DC">Owner · Roofing</span></div></figcaption>
-</figure>
-<figure class="tcard" style="position: relative; margin: 0; min-height: 420px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF">
-<img src="https://ridealong-pilot.vercel.app/assets/story-hvac-DHRbiqGm.webp" alt="" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
-<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,26,0) 30%, rgba(21,23,26,0.88) 100%)"></div>
-<span style="position: absolute; top: 16px; left: 16px; background: #FFFFFF; color: #15171A; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
-<figcaption style="position: relative; padding: 24px; display: flex; flex-direction: column"><blockquote style="margin: 0; font-size: 18px; line-height: 1.4; font-weight: 600">[Quote: The first missed step the scorecard caught]</blockquote>
-<div style="margin-top: 14px; font-size: 14px"><b>[Name], [Company]</b><br><span style="color: #D5D8DC">Sales manager · HVAC</span></div></figcaption>
-</figure>
-<figure class="tcard" style="position: relative; margin: 0; min-height: 420px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF">
-<img src="https://ridealong-pilot.vercel.app/assets/story-solar-UzUKjAH0.webp" alt="" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
-<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,26,0) 30%, rgba(21,23,26,0.88) 100%)"></div>
-<span style="position: absolute; top: 16px; left: 16px; background: #FFFFFF; color: #15171A; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
-<figcaption style="position: relative; padding: 24px; display: flex; flex-direction: column"><blockquote style="margin: 0; font-size: 18px; line-height: 1.4; font-weight: 600">[Quote: Getting a new rep closing in weeks instead of months]</blockquote>
-<div style="margin-top: 14px; font-size: 14px"><b>[Name], [Company]</b><br><span style="color: #D5D8DC">Owner · Solar</span></div></figcaption>
-</figure>
-<figure style="position: relative; margin: 0; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
-<span style="align-self: flex-start; background: #ECE8DF; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
-<div><div style="margin-bottom: 14px"><b style="font-family: Archivo, sans-serif; font-size: 22px; color: #16723F">[Result]</b><div style="font-size: 13px; color: #646A72; font-weight: 600">[What improved, in their numbers]</div></div><blockquote style="margin: 0; font-size: 18px; line-height: 1.45; font-weight: 600">[Quote: Replacing Saturday ride-alongs]</blockquote></div>
-<figcaption style="display: flex; gap: 12px; align-items: center; font-size: 14px"><img src="https://ridealong-pilot.vercel.app/assets/avatar-windows-B7SQDbG2.webp" alt="" loading="lazy" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover"><span><b>[Name], [Company]</b><br><span style="color: #646A72">Owner · Windows &amp; doors</span></span></figcaption>
-</figure>
-<figure class="tcard" style="position: relative; margin: 0; min-height: 420px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF">
-<img src="https://ridealong-pilot.vercel.app/assets/story-remodeling-Bos1hRj4.webp" alt="" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
-<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,26,0) 30%, rgba(21,23,26,0.88) 100%)"></div>
-<span style="position: absolute; top: 16px; left: 16px; background: #FFFFFF; color: #15171A; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
-<figcaption style="position: relative; padding: 24px; display: flex; flex-direction: column"><div style="display: inline-flex; flex-direction: column; background: #3DDC84; color: #0B2A17; border-radius: 12px; padding: 10px 14px; margin-bottom: 14px; align-self: flex-start"><b style="font-family: Archivo, sans-serif; font-size: 20px">[Result]</b><span style="font-size: 13px; font-weight: 600">[What improved, in their numbers]</span></div><blockquote style="margin: 0; font-size: 18px; line-height: 1.4; font-weight: 600">[Quote: Playing the tape in the Monday sales meeting]</blockquote>
-<div style="margin-top: 14px; font-size: 14px"><b>[Name], [Company]</b><br><span style="color: #D5D8DC">Sales manager · Remodeling</span></div></figcaption>
-</figure>
-<figure class="tcard" style="position: relative; margin: 0; min-height: 420px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF">
-<img src="https://ridealong-pilot.vercel.app/assets/story-pest-Bc-DYtAd.webp" alt="" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
-<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,26,0) 30%, rgba(21,23,26,0.88) 100%)"></div>
-<span style="position: absolute; top: 16px; left: 16px; background: #FFFFFF; color: #15171A; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
-<figcaption style="position: relative; padding: 24px; display: flex; flex-direction: column"><blockquote style="margin: 0; font-size: 18px; line-height: 1.4; font-weight: 600">[Quote: What the reps said when the recorders showed up]</blockquote>
-<div style="margin-top: 14px; font-size: 14px"><b>[Name], [Company]</b><br><span style="color: #D5D8DC">Owner · Pest control</span></div></figcaption>
-</figure>
-<figure style="position: relative; margin: 0; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
-<span style="align-self: flex-start; background: #ECE8DF; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
-<div><blockquote style="margin: 0; font-size: 18px; line-height: 1.45; font-weight: 600">[Quote: One line on what changed for their team]</blockquote></div>
-<figcaption style="display: flex; gap: 12px; align-items: center; font-size: 14px"><img src="https://ridealong-pilot.vercel.app/assets/avatar-plumbing-BYx1zuZw.webp" alt="" loading="lazy" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover"><span><b>[Name], [Company]</b><br><span style="color: #646A72">Owner · Plumbing</span></span></figcaption>
-</figure>
-<figure style="position: relative; margin: 0; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
-<span style="align-self: flex-start; background: #ECE8DF; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
-<div><blockquote style="margin: 0; font-size: 18px; line-height: 1.45; font-weight: 600">[Quote: A specific deal the tape helped them save]</blockquote></div>
-<figcaption style="display: flex; gap: 12px; align-items: center; font-size: 14px"><img src="https://ridealong-pilot.vercel.app/assets/avatar-roofing-mgr-B4LUwDmP.webp" alt="" loading="lazy" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover"><span><b>[Name], [Company]</b><br><span style="color: #646A72">Sales manager · Roofing</span></span></figcaption>
-</figure>
-<figure style="position: relative; margin: 0; background: #FFFFFF; border: 1px solid #E3DFD6; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
-<span style="align-self: flex-start; background: #ECE8DF; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 10px">Placeholder</span>
-<div><blockquote style="margin: 0; font-size: 18px; line-height: 1.45; font-weight: 600">[Quote: Why they stopped guessing from “it went great”]</blockquote></div>
-<figcaption style="display: flex; gap: 12px; align-items: center; font-size: 14px"><img src="https://ridealong-pilot.vercel.app/assets/avatar-hvac-owner-Bz_RRtKS.webp" alt="" loading="lazy" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover"><span><b>[Name], [Company]</b><br><span style="color: #646A72">Owner · HVAC</span></span></figcaption>
-</figure>
-</div>
+<!--
+  CUSTOMER STORIES: hidden until there are real quotes from real customers.
+  To turn it on: fill each card with the customer's actual words, name and company
+  (with their permission), then delete the `hidden` attribute on the section below.
+-->
+<section id="stories" class="sec" hidden>
+  <div class="wrap">
+    <p class="eyebrow">Customers</p>
+    <h2>Owners who stopped guessing.</h2>
+    <div class="story-grid">
+      <figure class="card story story-wide"><img src="https://ridealong-pilot.vercel.app/assets/story-roofing-DmtvUKwL.webp" alt="" loading="lazy" style="object-position: 50% 18%"><figcaption><div class="result"><b>[Result]</b><span>[What improved, in their numbers]</span></div><blockquote>[Customer's own words]</blockquote><cite><b>[Name], [Company]</b>Owner · Roofing</cite></figcaption></figure>
+      <figure class="card story"><img src="https://ridealong-pilot.vercel.app/assets/story-hvac-DHRbiqGm.webp" alt="" loading="lazy"><figcaption><blockquote>[Customer's own words]</blockquote><cite><b>[Name], [Company]</b>Sales manager · HVAC</cite></figcaption></figure>
+      <figure class="card story"><img src="https://ridealong-pilot.vercel.app/assets/story-solar-UzUKjAH0.webp" alt="" loading="lazy"><figcaption><blockquote>[Customer's own words]</blockquote><cite><b>[Name], [Company]</b>Owner · Solar</cite></figcaption></figure>
+      <figure class="card story"><img src="https://ridealong-pilot.vercel.app/assets/story-remodeling-Bos1hRj4.webp" alt="" loading="lazy"><figcaption><blockquote>[Customer's own words]</blockquote><cite><b>[Name], [Company]</b>Sales manager · Remodeling</cite></figcaption></figure>
+      <figure class="card story"><img src="https://ridealong-pilot.vercel.app/assets/story-pest-Bc-DYtAd.webp" alt="" loading="lazy"><figcaption><blockquote>[Customer's own words]</blockquote><cite><b>[Name], [Company]</b>Owner · Pest control</cite></figcaption></figure>
+    </div>
+  </div>
 </section>
 
 <!-- FOUNDING SHOPS -->
-<section class="sec" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px">
-<div style="border: 2px dashed #C9C4B8; border-radius: 24px; padding: 40px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center">
-<div style="flex: 1 1 480px">
-<h2 style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px; letter-spacing: -0.02em; margin: 0">Be one of our founding shops.</h2>
-<p style="font-size: 17px; color: #3F444B; line-height: 1.55; margin: 12px 0 0">We're working closely with a small group of in-home sales teams. You get a checklist built with us, direct access to the people building it, and a say in what we build next.</p>
-</div>
-<a href="#start" class="cta" style="flex: 0 0 auto; background: #16723F; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; padding: 16px 26px; border-radius: 12px">Apply for a spot</a>
-</div>
+<section class="sec">
+  <div class="wrap">
+    <div class="founding">
+      <div>
+        <p class="eyebrow">Founding shops</p>
+        <h2 class="h2-sm">Be one of the first shops on Ridealong.</h2>
+        <p>We're working closely with a small group of in-home sales teams. You get:</p>
+        <ul class="perks">
+          <li>Your checklist built with us, on the first call</li>
+          <li>Direct access to the people building it</li>
+          <li>A say in what we build next</li>
+          <li>No long-term contract</li>
+        </ul>
+      </div>
+      <a href="#start" class="btn btn-lg">Apply for a spot</a>
+    </div>
+  </div>
 </section>
 
 <!-- FAQ -->
-<section id="faq" class="sec" style="max-width: 860px; margin: 0 auto; padding: 56px 24px 96px">
-<h2 class="h2" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.03em; margin: 0 0 28px">Questions owners ask.</h2>
-
-<details style="border-top: 1px solid #DAD5CA; padding: 4px 0">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-weight: 600; font-size: 18px; min-height: 44px">Is it legal to record in a customer’s home?<span class="plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16723F; transition: transform .2s">+</span></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #3F444B">Recording rules are set state by state, and some states require everyone in the conversation to agree. That’s why nothing records until the rep asks at the door and the homeowner says yes. The green light stays on while it records, and it stays off if they say no. It records sound only, with no camera. Check your state’s rules with your attorney before you start; we give you a consent script your reps can use word for word.</p>
-</details>
-
-<details style="border-top: 1px solid #DAD5CA; padding: 4px 0">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-weight: 600; font-size: 18px; min-height: 44px">How does the scoring work?<span class="plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16723F; transition: transform .2s">+</span></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #3F444B">You walk us through your sales process on the first call and we turn it into a checklist. Each recording is transcribed and checked against it automatically, with a timestamp on each line, so you can play back the moment and judge it yourself.</p>
-</details>
-
-<details style="border-top: 1px solid #DAD5CA; padding: 4px 0">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-weight: 600; font-size: 18px; min-height: 44px">What does it cost?<span class="plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16723F; transition: transform .2s">+</span></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #3F444B">A flat monthly fee based on how many reps you put on it. We give you the number on the first call, before you commit to anything.</p>
-</details>
-
-<details style="border-top: 1px solid #DAD5CA; padding: 4px 0">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-weight: 600; font-size: 18px; min-height: 44px">My reps already record on their phones. Why switch?<span class="plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16723F; transition: transform .2s">+</span></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #3F444B">If your phone setup already works, we’ll tell you to keep it. The usual problems are phones dying by the last appointment, calls and texts coming in mid-pitch, and an app that has to be unlocked and opened every time.</p>
-</details>
-
-<details style="border-top: 1px solid #DAD5CA; padding: 4px 0">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-weight: 600; font-size: 18px; min-height: 44px">How do reps feel about being recorded?<span class="plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16723F; transition: transform .2s">+</span></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #3F444B">Some won’t like it at first. Introduce it as coaching that helps them close, and use the tape to show what they did well, not only what they missed. We’ll help you plan how to bring it up with your team.</p>
-</details>
-
-<details style="border-top: 1px solid #DAD5CA; padding: 4px 0">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-weight: 600; font-size: 18px; min-height: 44px">How long does setup take?<span class="plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16723F; transition: transform .2s">+</span></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #3F444B">About 30 minutes on a call to build your checklist. The bands ship after that, and your reps can wear them on their next appointment.</p>
-</details>
-
+<section id="faq" class="sec">
+  <div class="wrap narrow">
+    <h2>Questions owners ask.</h2>
+    <div class="faq">
+      <details><summary>Is it legal to record in a customer's home?<span class="plus" aria-hidden="true"></span></summary><p>Recording rules are set state by state, and some states require everyone in the conversation to agree. That's why nothing records until the rep asks at the door and the homeowner says yes. The green light stays on while it records, and it stays off if they say no. It records sound only, with no camera. Check your state's rules with your attorney before you start; we give you a consent script your reps can use word for word.</p></details>
+      <details><summary>How does the scoring work?<span class="plus" aria-hidden="true"></span></summary><p>You walk us through your sales process on the first call and we turn it into a checklist. Each recording is transcribed and checked against it automatically, with a timestamp on each line, so you can play back the moment and judge it yourself.</p></details>
+      <details><summary>What does it cost?<span class="plus" aria-hidden="true"></span></summary><p>A flat monthly fee based on how many reps you put on it. We give you the number on the first call, before you commit to anything.</p></details>
+      <details><summary>My reps already record on their phones. Why switch?<span class="plus" aria-hidden="true"></span></summary><p>If your phone setup already works, we'll tell you to keep it. The usual problems are phones dying by the last appointment, calls and texts coming in mid-pitch, and an app that has to be unlocked and opened every time.</p></details>
+      <details><summary>How do reps feel about being recorded?<span class="plus" aria-hidden="true"></span></summary><p>Some won't like it at first. Introduce it as coaching that helps them close, and use the tape to show what they did well, not only what they missed. We'll help you plan how to bring it up with your team.</p></details>
+      <details><summary>How long does setup take?<span class="plus" aria-hidden="true"></span></summary><p>About 30 minutes on a call to build your checklist. The bands ship after that, and your reps can wear them on their next appointment.</p></details>
+    </div>
+  </div>
 </section>
 
 <!-- FINAL CTA -->
-<section id="start" style="background: #15171A; color: #F6F4EF">
-<div class="sec" style="max-width: 820px; margin: 0 auto; padding: 104px 24px; text-align: center">
-<h2 class="h2" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 56px; line-height: 1.03; letter-spacing: -0.035em; margin: 0">Your best closer can't ride along with everyone.</h2>
-<p style="font-size: 19px; color: #C9CCD1; line-height: 1.55; margin: 18px auto 0; max-width: 600px">Leave your email and we'll set up a 30-minute call to turn your sales process into a scorecard. Your reps can wear the band on their next appointment.</p>
-<div class="when-open">
-<form class="lead-form" style="margin: 34px auto 0; display: flex; flex-wrap: wrap; gap: 10px; max-width: 560px">
-<label for="end-email" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Work email</label>
-<input id="end-email" type="email" required placeholder="you@yourcompany.com" style="flex: 1 1 260px; min-width: 0; height: 58px; box-sizing: border-box; border: none; border-radius: 12px; padding: 0 18px; font: 500 17px Inter, sans-serif; background: #FFFFFF; color: #15171A">
-<button type="submit" style="flex: 0 0 auto; height: 58px; border: none; border-radius: 12px; background: #3DDC84; color: #0B2A17; font: 700 17px Inter, sans-serif; padding: 0 26px; cursor: pointer">Book my 30-min call</button>
-</form>
-</div>
-<div class="when-sent" hidden>
-<div role="status" style="margin: 34px auto 0; max-width: 560px; background: #1F3A2A; border-radius: 12px; padding: 18px 20px; font-size: 17px; font-weight: 500; color: #CFF5DD">Got it. We'll email you within one business day to pick a time.</div>
-</div>
-<div style="margin-top: 18px; font-size: 14px; color: #AEB3BA">No long-term contract · Price on the call, before you commit</div>
-</div>
-<footer style="border-top: 1px solid #2A2E34">
-<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: #AEB3BA">
-<span>© 2026 Ridealong · A wristband recorder and a scorecard after every appointment, for teams that sell in the home.</span>
-<span>Product images are renderings.</span>
-</div>
-</footer>
+<section id="start" class="final">
+  <div class="wrap final-in">
+    <h2>Your best closer can't ride along with everyone.</h2>
+    <p class="final-sub">Leave your email and we'll set up a 30-minute call to turn your sales process into a scorecard.</p>
+    <div class="when-open">
+      <form class="lead-form" data-source="final">
+        <label for="end-email" class="sr">Work email</label>
+        <input id="end-email" type="email" required autocomplete="email" placeholder="you@yourcompany.com">
+        <button type="submit" class="btn btn-lg btn-bright">Book my 30-min call</button>
+      </form>
+    </div>
+    <div class="when-sent sent sent-dark" role="status" hidden>Got it. We'll email you within one business day to pick a time.</div>
+    <ol class="next">
+      <li><b>1</b><span>30-minute call to map your sales process</span></li>
+      <li><b>2</b><span>We build your checklist and ship the bands</span></li>
+      <li><b>3</b><span>Scorecards from your reps' next appointments</span></li>
+    </ol>
+    <p class="fine">No long-term contract · Price on the call, before you commit</p>
+  </div>
 </section>
 
-</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>© 2026 Ridealong · A wristband recorder and a scorecard after every appointment, for teams that sell in the home.</span>
+    <span>Product images are renderings.</span>
+  </div>
+</footer>
+
+<!-- Mobile sticky CTA -->
+<a href="#start" class="mobile-cta">Book a 30-min demo</a>
+
 <script src="main.js"></script>
 </body>
 </html>
